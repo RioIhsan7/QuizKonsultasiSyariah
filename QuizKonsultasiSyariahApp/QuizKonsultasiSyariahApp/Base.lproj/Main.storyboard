@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizKonsultasiSyariahApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Mo-Zz-Lh3">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="106" id="bS0-ND-5R0">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="106"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bS0-ND-5R0" id="7ko-Td-fHH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MRj-8o-jI6">
+                                                    <rect key="frame" x="8" y="0.0" width="161" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="161" id="7C1-MN-Mqj"/>
+                                                        <constraint firstAttribute="height" constant="94" id="njU-qd-qaH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUV-w4-Njk">
+                                                    <rect key="frame" x="177" y="0.0" width="183" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="94" id="MIh-nM-yuC"/>
+                                                        <constraint firstAttribute="width" constant="183" id="foE-4j-C3y"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mUV-w4-Njk" firstAttribute="top" secondItem="7ko-Td-fHH" secondAttribute="top" id="6OL-Zm-gbp"/>
+                                                <constraint firstItem="MRj-8o-jI6" firstAttribute="leading" secondItem="7ko-Td-fHH" secondAttribute="leading" constant="8" id="Dqo-Ye-IM1"/>
+                                                <constraint firstItem="MRj-8o-jI6" firstAttribute="top" secondItem="7ko-Td-fHH" secondAttribute="top" id="GKU-sP-YzW"/>
+                                                <constraint firstItem="mUV-w4-Njk" firstAttribute="leading" secondItem="MRj-8o-jI6" secondAttribute="trailing" constant="8" id="L0c-zU-8lU"/>
+                                                <constraint firstAttribute="bottom" secondItem="MRj-8o-jI6" secondAttribute="bottom" constant="11.5" id="Vb1-Nq-Kte"/>
+                                                <constraint firstAttribute="trailing" secondItem="mUV-w4-Njk" secondAttribute="trailing" constant="15" id="Wjm-tq-Kmd"/>
+                                                <constraint firstAttribute="bottom" secondItem="mUV-w4-Njk" secondAttribute="bottom" constant="11.5" id="nfl-89-bqq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHn-Wd-Y2Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Konsultasi Syariah" id="YWn-jo-Dgu"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Mo-Zz-Lh3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5iC-qE-9q5"/>
+                            <constraint firstItem="9Mo-Zz-Lh3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Qnq-Nf-UGk"/>
+                            <constraint firstItem="cHn-Wd-Y2Z" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sr4-UQ-YCJ"/>
+                            <constraint firstItem="9Mo-Zz-Lh3" firstAttribute="top" secondItem="cHn-Wd-Y2Z" secondAttribute="bottom" id="jYs-KC-yeD"/>
+                            <constraint firstItem="9Mo-Zz-Lh3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kan-Ya-GgU"/>
+                            <constraint firstItem="cHn-Wd-Y2Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ooH-qa-N47"/>
+                            <constraint firstItem="cHn-Wd-Y2Z" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="pCS-Ig-bdf"/>
+                            <constraint firstItem="9Mo-Zz-Lh3" firstAttribute="top" secondItem="cHn-Wd-Y2Z" secondAttribute="bottom" id="rTb-Y0-eb3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="9Mo-Zz-Lh3" id="x6H-eV-pCU"/>
+                        <segue destination="mtV-QF-3Jt" kind="show" identifier="passData" id="Cbi-py-TW3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5RB-Fc-Vcg">
+            <objects>
+                <viewController storyboardIdentifier="More" id="mtV-QF-3Jt" customClass="DetailViewController" customModule="QuizKonsultasiSyariahApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KxP-wh-Fvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Itw-it-4li">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Detail" id="VzA-jE-doD">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="uAX-SG-Q90">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="modal" id="VHC-28-NKh"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhR-aN-m0i">
+                                <rect key="frame" x="16" y="92" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MAW-QR-20S"/>
+                                    <constraint firstAttribute="width" constant="343" id="TqQ-If-7L4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWn-Vq-Xkd">
+                                <rect key="frame" x="29" y="140" width="317" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="81I-jC-jLW"/>
+                                    <constraint firstAttribute="height" constant="204" id="qhG-yZ-TZu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Itw-it-4li" firstAttribute="trailing" secondItem="DmT-Cm-HxA" secondAttribute="trailing" id="04k-t5-t58"/>
+                            <constraint firstItem="DmT-Cm-HxA" firstAttribute="bottom" secondItem="JWn-Vq-Xkd" secondAttribute="bottom" constant="323" id="0hY-ZG-lf3"/>
+                            <constraint firstItem="JWn-Vq-Xkd" firstAttribute="leading" secondItem="DmT-Cm-HxA" secondAttribute="leading" constant="29" id="6f5-Lc-fTi"/>
+                            <constraint firstItem="JWn-Vq-Xkd" firstAttribute="top" secondItem="hhR-aN-m0i" secondAttribute="bottom" constant="27" id="8EX-5E-laU"/>
+                            <constraint firstItem="Itw-it-4li" firstAttribute="leading" secondItem="DmT-Cm-HxA" secondAttribute="leading" id="J48-d1-OQX"/>
+                            <constraint firstItem="DmT-Cm-HxA" firstAttribute="trailing" secondItem="hhR-aN-m0i" secondAttribute="trailing" constant="16" id="RBP-L9-Ntz"/>
+                            <constraint firstItem="hhR-aN-m0i" firstAttribute="top" secondItem="Itw-it-4li" secondAttribute="bottom" constant="48" id="X7E-7Z-FZY"/>
+                            <constraint firstItem="DmT-Cm-HxA" firstAttribute="trailing" secondItem="JWn-Vq-Xkd" secondAttribute="trailing" constant="29" id="enN-6S-cCM"/>
+                            <constraint firstItem="JWn-Vq-Xkd" firstAttribute="top" secondItem="hhR-aN-m0i" secondAttribute="bottom" constant="27" id="h7K-gs-9Wn"/>
+                            <constraint firstItem="Itw-it-4li" firstAttribute="top" secondItem="KxP-wh-Fvm" secondAttribute="top" id="mAt-Yy-KC5"/>
+                            <constraint firstItem="hhR-aN-m0i" firstAttribute="leading" secondItem="DmT-Cm-HxA" secondAttribute="leading" constant="16" id="rQq-KS-fu8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DmT-Cm-HxA"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgKonsultasi" destination="JWn-Vq-Xkd" id="nqd-7i-K0w"/>
+                        <outlet property="namaKonsultasi" destination="hhR-aN-m0i" id="CEE-Rz-Sm0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuM-8h-FIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962.39999999999998" y="133.5832083958021"/>
+        </scene>
+        <!--More Praktek View Controller-->
+        <scene sceneID="aRV-zx-uod">
+            <objects>
+                <viewController storyboardIdentifier="descPraktek" id="paZ-ug-A7Y" customClass="MorePraktekViewController" customModule="QuizKonsultasiSyariahApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bD4-x6-ZhB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AmH-aj-DYq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="More About Praktek" id="9cG-DM-BpW">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="rewind" id="Gee-4y-pv5">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="modal" id="7oo-wH-emt"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MalPraktekDokter" translatesAutoresizingMaskIntoConstraints="NO" id="ZQB-k6-tLT">
+                                <rect key="frame" x="33" y="79" width="309" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IF0-jC-CV0">
+                                <rect key="frame" x="25" y="311" width="327" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Jika ada dokter melakukan malpraktek, apakah dokter harus menanggung segala resikonya?
+
+Jawab:
+
+Bismillah was shalatu was salamu ‘ala Rasulillah, wa ba’du,
+
+Ketentuan yang berlaku untuk dokter, tidak berbeda dengan ketentuan yang berlaku untuk profesi lainnya. Mereka dituntut untuk bekerja sesuai dengan SOP masing-masing profesi. Dan namanya kerja manusia, tidak akan lepas dari kesalahan. Sebagai bagian dari ketidak-sempurnaan manusia.
+
+Hanya saja, para ulama menyebutkan, ketika terjadi kesalahan yang membahayakan klien, tingkat tanggung jawabnya diukur berdasarkan sejauh mana kesesuaian kinerjanya dengan SOP. Secara sederhana bisa kita bagi jadi 2:
+
+[1] Jika dokter telah bekerja sesuai SOP, maka dia tidak menanggung resiko yang membahayakan pasiennya.
+
+Misalnya, dokter telah memberikan resep obat sesuai dosis dan protap yang berlaku, namun ternyata pasien meninggal, dokter tidak disalahkan.
+
+[2] Jika dokter tidak mengikuti ketentuan SOP dan protap penanganan pasien sesuai yang ditetapkan, maka dia wajib menanggung resiko bahaya yang dialami pasien.
+
+Imam as-Syafi’i mengatakan,
+
+والوجه الثاني الذي يسقط فيه العقل أن يأمر الرجل به الداء الطبيب أن يبط جرحه… أو الحجام أن يحجمه أو الكاوي أن يكويه أو يأمر أبو الصبي الحجام أن يختنه فيموت من شيء من هذا ولم يتعد المأمور ما أمره به فلا عقل ولا مأخوذية إن حسنت نيته إن شاء الله تعالى وذلك أن الطبيب والحجام إنما فعلاه للصلاح بأمر المفعول به أو والد الصبي الذي يجوز عليهما أمره في كل نظر لهما
+
+Contoh kedua yang tidak ada diyat, ada orang yang meminta tabib untuk mengobati sakitnya… atau tukang bekam diminta untuk membekam atau tukang kay untuk mengkay, atau seorang ayah menyuruhnya untuk mengkhitan anaknya, lalu mati karena praktek itu, sementara yang dia lakukan tidak lebih dari apa yang diperintahkan, maka tidak ada diyat untuknya dan tidak dihukum, jika niatnya baik, insyaaAllah. Karena tabib maupun tukang bekam, mereka melakukan praktek pengobatan atas perintah pasien atau ayahnya pasien, yang dibolehkan untuk menangani sesuai keahlian keduanya. (al-Umm, 6/175)
+
+Ini berlaku jika dokter telah mendapatkan izin praktek sesuai bidangnya. Jika ada dokter menangani bagian yang bukan bidangnya, kemudian terjadi resiko kesalahan, maka dokter yang tanggung jawab.
+
+Misalnya, dokter umum menangani penyakit akut yang seharusnya ditangani oleh spesialis.
+
+Dalilnya adalah hadis dari Abdullah bin Amr bin Ash radhiyallahu ‘anhuma, Nabi shallallahu ‘alaihi wa sallam bersabda,
+
+من تَطَبَّبَ ولم يعلم منه طِبّ فهو ضَامِنٌ
+
+Siapa yang melakukan praktek pengobatan, sementara dia tidak mengetahui dengan baik tentan ilmu itu, maka dia wajib menanggung resiko. (HR. Nasai 4830 dan dihasankan al-Albani)
+
+Al-Qodhi Ibnu Farhoun al-Maliki mengatakan,
+
+وإن كان الخاتِنُ غير معروف بالخَتْن والإصابة فيه، وعرض نفسه – أي لهذا العمل – فهو ضامن لجميع ما وَصَفْنَا في ماله
+
+Jika orang yang mengkhitan belum dikenal memiliki keahlian khitan, lalu dia menawarkan dirinya untuk melakukan khitan, maka dia wajib menanggung resiko dengan hartanya sebagaimana yang tadi kami sebutkan. (Tabshiratul Hukkam, 2/327).
+
+Jika Dokter Punya Niat Jahat
+
+Jika kesalahan yang dilakukan dokter ini karena niat jahat, maka dilakukan hukum diqisas, sesuai tingkat resiko yang diderita pasien. Jika kesalahan ini sampai menyebabkan ada organ pasien yang rusak, maka dia diqisas dengan dirusak organnya yang sama.
+
+Ad-Dasuqi mengatakan,
+
+إنما لم يُقْتَص مِنَ الجاهل، لأنَّ الغَرَضَ أنه لم يَقْصُد ضررًا؛ وإنما قَصَد نفعَ العليل أو رجا ذلك. وأما لو قصد ضرره فإنه يُقْتَص منه
+
+Untuk orang yang melakukan kesalahan karena tidak tahu, dia tidak diqisas. Karena tujuan dia bukan untuk membahayakan pasien. Namun tujuannya adalah mengobati orang sakit atau menurunkan bahaya penyakitnya. Namun jika tujuannya untuk membahayakan pasien, maka dia diqisas. (Hasyiyah ad-Dasuqi, 19/49).
+
+Allahu a’lam.
+
+
+
+Read more https://konsultasisyariah.com/27792-malpraktek-dokter-siapa-nanggung-resiko.html</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="48S-6a-lN1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52G-mK-RAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688.8" y="133.5832083958021"/>
+        </scene>
+        <!--About Dev View Controller-->
+        <scene sceneID="CiB-tm-YrA">
+            <objects>
+                <viewController storyboardIdentifier="about" id="BIk-6Y-Ffg" customClass="AboutDevViewController" customModule="QuizKonsultasiSyariahApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bvl-I6-mvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdL-jp-kER">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="About Developer" id="feV-gw-h3y">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="Hn3-Jk-dMn">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="modal" id="S3h-lh-dQC"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama : Rio Ihsan Fikry" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-lP-68Y">
+                                <rect key="frame" x="46" y="351" width="282" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TTL : Samarinda, 7 Januari 2003" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USv-NT-CKp">
+                                <rect key="frame" x="46" y="388" width="282" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2017-09-11 at 9.07.26 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="RaJ-cE-FfU">
+                                <rect key="frame" x="46" y="74" width="282" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="eEP-8P-MY2"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblNama" destination="6Eo-lP-68Y" id="QHl-2X-Vav"/>
+                        <outlet property="lblTTL" destination="USv-NT-CKp" id="TrI-7k-qLi"/>
+                        <outlet property="profil" destination="RaJ-cE-FfU" id="LOY-Pb-uPX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ru7-cz-pAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383.1999999999998" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MalPraktekDokter" width="348" height="217"/>
+        <image name="Screen Shot 2017-09-11 at 9.07.26 PM.png" width="176" height="155"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="S3h-lh-dQC"/>
+    </inferredMetricsTieBreakers>
+</document>
